@@ -6,7 +6,7 @@ compromissos
 
 ## Alunos integrantes da equipe
 
-* Eduardo
+* Eduardo Bandeira de Melo
 * Gabriel Fernandes de Oliveira
 * Pedro Reis de Souza
 * Thiago Oliveira Silva
