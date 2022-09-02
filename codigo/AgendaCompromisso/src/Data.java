@@ -169,8 +169,14 @@ public class Data{
           "/" + String.format("%4d",this.ano));
     }
     
-
-
     
+    /**
+     * Retorna o ultimo dia do mês
+     * @return int mes
+     */
+     public int diaMes(int mes){
+         
+         return DIASDOMES[mes];
+     }
 }
 
