@@ -171,11 +171,27 @@ public class Data{
     
     
     /**
+     * Retorna o dia
+     * @return int com o dia
+     */
+     public int obterDia(){
+         return this.dia;
+     }
+     
+     /**
+      * Retorna o mês
+      * @return int com o mês
+      */
+      public int obterMes(){
+          return this.mes;
+      }
+    
+    
+    /**
      * Retorna o ultimo dia do mÃªs
      * @return int mes
      */
      public int diaMes(int mes){
-         
          return DIASDOMES[mes];
      }
 }
