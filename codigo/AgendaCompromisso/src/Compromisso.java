@@ -16,7 +16,7 @@ public class Compromisso {
 		return this.data;
 	}
 
-	public void setData(Data dataInicio) {
+	public void setData(Data data) {
 		this.data = data;
 	}
 
