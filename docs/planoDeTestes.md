@@ -1,4 +1,4 @@
-# Especifique aqui seu plano de testes, no formato:
+# Plano de Testes:
 
 1. Verifica se o compromisso criado sem atributos possui valor nulo para "nome".
   - testNomeCompromissoVazio()
@@ -20,5 +20,3 @@
   - testAnoAtual()
 11. Verifica se anos bissextos são detectados no momento de criação de uma data.
   - testDetectaBissexto()
-
-e assim sucessivamente.
