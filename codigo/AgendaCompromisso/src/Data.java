@@ -108,7 +108,7 @@ public class Data{
     * Verifica se a data armazenada é válida (método privado). Só valem datas de 1900 em diante.
     * @return TRUE se é válida ; FALSE se não é válida
     */
-    private Boolean dataValida(){
+    public Boolean dataValida(){
         Boolean resposta = true;        //resposta sobre a validade
         int maximoDeDias=0;
 
@@ -179,8 +179,8 @@ public class Data{
      }
      
      /**
-      * Retorna o m�s
-      * @return int com o m�s
+      * Retorna o m�s
+      * @return int com o m�s
       */
       public int obterMes(){
           return this.mes;
@@ -193,6 +193,10 @@ public class Data{
      */
      public int diaMes(int mes){
          return DIASDOMES[mes];
+     }
+     
+     public int getAno() {
+    	 return this.ano;
      }
 }
 
