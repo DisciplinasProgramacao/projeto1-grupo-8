@@ -2,13 +2,17 @@ import java.io.*;
 import java.util.List;
 import java.util.ArrayList;
 
+
+	/** Classe app simples para fundamentos de POO */
 public class App {
-
+	
+	 /** Classe inicial para marcar compromissos. */
 	public static void main(String[] args) {
-		 System.out.println("Você deseja criar um compromisso?");
+		 System.out.println("Vocï¿½ deseja criar um compromisso?");
 		 System.out.println("1 - SIM");
-		 System.out.println("2 - NÃO");
-
+		 System.out.println("2 - Nï¿½O");
+		 
+	 /** Estrutura de repetiÃ§Ã£o para personalizar o compromisso. */ 
 		int escolha = MyIO.readInt();
 		List<Compromisso> compromisso = new ArrayList<Compromisso>();
 			while(escolha == 1) {
@@ -17,7 +21,7 @@ public class App {
 			
 			System.out.print("Digite o dia do seu compromisso: ");
 			int dia = MyIO.readInt();
-			System.out.print("Digite o mês do seu compromisso: ");
+			System.out.print("Digite o mï¿½s do seu compromisso: ");
 			int mes = MyIO.readInt();
 			
 			
@@ -28,7 +32,7 @@ public class App {
 			int quantidadeFrequencia = MyIO.readInt();
 			
 			
-			
+	/** Definir a frequÃªncia que o compromisso serÃ¡ realizado. */
 			for(int j = 0; j < quantidadeFrequencia; j++) {
 				Data data = new Data(dia, mes, 2022);
 				compromisso.add(new Compromisso(nome, data));
@@ -45,18 +49,20 @@ public class App {
 			
 			 System.out.println("1 - CRIAR OUTRO COMPROMISSO");
 			 System.out.println("2 - CANCELAR");
-			 System.out.println("3 - GERAR RELATÓRIO");
+			 System.out.println("3 - GERAR RELATï¿½RIO");
 			 escolha = MyIO.readInt();
 			 
+			 
+	 /** Gerar relatÃ³rio para o usuÃ¡rio dos compromissos agendados. */
 			 if(escolha == 3) {
-				 System.out.print("Digite o dia de inicio do relatório: ");
+				 System.out.print("Digite o dia de inicio do relatï¿½rio: ");
 					int diaInicio = MyIO.readInt();
-					System.out.print("Digite o mês de inicio do relatório: ");
+					System.out.print("Digite o mï¿½s de inicio do relatï¿½rio: ");
 					int mesInicio = MyIO.readInt();
 					
-					System.out.print("Digite o dia de termino do relatório: ");
+					System.out.print("Digite o dia de termino do relatï¿½rio: ");
 					int diaFim = MyIO.readInt();
-					System.out.print("Digite o mês de termino do relatório: ");
+					System.out.print("Digite o mï¿½s de termino do relatï¿½rio: ");
 					int mesFim = MyIO.readInt();
 					
 					for(int i = 0; i < compromisso.size(); i++) {

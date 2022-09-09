@@ -179,8 +179,8 @@ public class Data{
      }
      
      /**
-      * Retorna o m�s
-      * @return int com o m�s
+      * Retorna o mes
+      * @return int com o mes
       */
       public int obterMes(){
           return this.mes;
@@ -195,6 +195,10 @@ public class Data{
          return DIASDOMES[mes];
      }
      
+     /**
+      * Retorna o ultimo dia do ano
+      * @return int ano
+      */
      public int getAno() {
     	 return this.ano;
      }
