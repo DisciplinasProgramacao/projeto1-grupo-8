@@ -34,6 +34,14 @@ class DataTest {
 	}
 	
 	@Test
+	public void testDetectaAnoInvalido() {
+		Data data = new Data(1,2,1870);
+		assertFalse(data.dataValida());
+		
+		
+	}
+	
+	@Test
 	public void testAnoAtual() {
 		Data data = new Data(1,1);
 		assertEquals(2022 , data.getAno());
