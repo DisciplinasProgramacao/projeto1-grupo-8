@@ -57,6 +57,7 @@ public class Compromisso {
      * Gera o relatório dos compromissos marcados.
      */
 	public void gerarRelatorio(){
+			System.out.println("-----------------------------RELATÓRIO----------------------------------");
 			System.out.println("Nome:" + getNome());
 			System.out.println("Data:" + getData().dataFormatada());
 	}
