@@ -78,11 +78,16 @@ public class App {
 					int mesFim = MyIO.readInt();
 					System.out.println("--------------------------------------------------------------------------");
 					
+					int count = 0;
 					for(int i = 0; i < compromisso.size(); i++) {
 						if((compromisso.get(i).getData().obterDia() >= diaInicio && compromisso.get(i).getData().obterMes() >= mesInicio) && (compromisso.get(i).getData().obterDia() <= diaFim && compromisso.get(i).getData().obterMes() <= mesFim)) {
 							compromisso.get(i).gerarRelatorio();
+							count++;
 						}
 						
+					}
+					if(count == 0) {
+						System.out.print("NÃO EXISTEM RELATÓRIOS NESSE PERIODO!");
 					}
 					break;
 			 } else if(escolha == 2) {
